@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B4481EB1F19D67E00775C2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4481EA1F19D67E00775C2B /* main.m */; };
+		9B4481EE1F19D67E00775C2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4481ED1F19D67E00775C2B /* AppDelegate.m */; };
+		9B4481F11F19D67E00775C2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4481F01F19D67E00775C2B /* ViewController.m */; };
+		9B4481F41F19D67E00775C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4481F21F19D67E00775C2B /* Main.storyboard */; };
+		9B4481F61F19D67E00775C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4481F51F19D67E00775C2B /* Assets.xcassets */; };
+		9B4481F91F19D67E00775C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4481F71F19D67E00775C2B /* LaunchScreen.storyboard */; };
+		9B4482041F19D67E00775C2B /* QQPageViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4482031F19D67E00775C2B /* QQPageViewControllerTests.m */; };
+		9B44820F1F19D67E00775C2B /* QQPageViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B44820E1F19D67E00775C2B /* QQPageViewControllerUITests.m */; };
+		9B44821E1F19D79600775C2B /* ZZKPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B44821D1F19D79600775C2B /* ZZKPageVC.m */; };
+		9B4482211F19D82F00775C2B /* ZZKSelectTabItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4482201F19D82F00775C2B /* ZZKSelectTabItemCell.m */; };
+		9B4482251F19DB3600775C2B /* ZZKMyTaskListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4482241F19DB3600775C2B /* ZZKMyTaskListVC.m */; };
+		9B44822C1F19DB5100775C2B /* ZZKPage1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4482271F19DB5100775C2B /* ZZKPage1VC.m */; };
+		9B44822D1F19DB5100775C2B /* ZZKPage2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4482291F19DB5100775C2B /* ZZKPage2VC.m */; };
+		9B44822E1F19DB5100775C2B /* ZZKPage3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B44822B1F19DB5100775C2B /* ZZKPage3VC.m */; };
+		F3539C6E6361F557648D5EC2 /* libPods-QQPageViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3855DA5E5716D358D18EA7 /* libPods-QQPageViewController.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B4482001F19D67E00775C2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4481DE1F19D67D00775C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B4481E51F19D67E00775C2B;
+			remoteInfo = QQPageViewController;
+		};
+		9B44820B1F19D67E00775C2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4481DE1F19D67D00775C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B4481E51F19D67E00775C2B;
+			remoteInfo = QQPageViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F75C6D90530A4BA36FA04F8 /* Pods-QQPageViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQPageViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQPageViewController/Pods-QQPageViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		9B4481E61F19D67E00775C2B /* QQPageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQPageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4481EA1F19D67E00775C2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B4481EC1F19D67E00775C2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B4481ED1F19D67E00775C2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B4481EF1F19D67E00775C2B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B4481F01F19D67E00775C2B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B4481F31F19D67E00775C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B4481F51F19D67E00775C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B4481F81F19D67E00775C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B4481FA1F19D67E00775C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4481FF1F19D67E00775C2B /* QQPageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4482031F19D67E00775C2B /* QQPageViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQPageViewControllerTests.m; sourceTree = "<group>"; };
+		9B4482051F19D67E00775C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B44820A1F19D67E00775C2B /* QQPageViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQPageViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B44820E1F19D67E00775C2B /* QQPageViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQPageViewControllerUITests.m; sourceTree = "<group>"; };
+		9B4482101F19D67E00775C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B44821C1F19D79600775C2B /* ZZKPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZKPageVC.h; sourceTree = "<group>"; };
+		9B44821D1F19D79600775C2B /* ZZKPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZKPageVC.m; sourceTree = "<group>"; };
+		9B44821F1F19D82F00775C2B /* ZZKSelectTabItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZKSelectTabItemCell.h; sourceTree = "<group>"; };
+		9B4482201F19D82F00775C2B /* ZZKSelectTabItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZKSelectTabItemCell.m; sourceTree = "<group>"; };
+		9B4482231F19DB3600775C2B /* ZZKMyTaskListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZKMyTaskListVC.h; sourceTree = "<group>"; };
+		9B4482241F19DB3600775C2B /* ZZKMyTaskListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZKMyTaskListVC.m; sourceTree = "<group>"; };
+		9B4482261F19DB5100775C2B /* ZZKPage1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZKPage1VC.h; sourceTree = "<group>"; };
+		9B4482271F19DB5100775C2B /* ZZKPage1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZKPage1VC.m; sourceTree = "<group>"; };
+		9B4482281F19DB5100775C2B /* ZZKPage2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZKPage2VC.h; sourceTree = "<group>"; };
+		9B4482291F19DB5100775C2B /* ZZKPage2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZKPage2VC.m; sourceTree = "<group>"; };
+		9B44822A1F19DB5100775C2B /* ZZKPage3VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZKPage3VC.h; sourceTree = "<group>"; };
+		9B44822B1F19DB5100775C2B /* ZZKPage3VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZKPage3VC.m; sourceTree = "<group>"; };
+		CF3855DA5E5716D358D18EA7 /* libPods-QQPageViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQPageViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6E4ADF69645ABFB1AF6E88 /* Pods-QQPageViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQPageViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQPageViewController/Pods-QQPageViewController.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B4481E31F19D67E00775C2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3539C6E6361F557648D5EC2 /* libPods-QQPageViewController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4481FC1F19D67E00775C2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4482071F19D67E00775C2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010FC038E70473BC45F288A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF3855DA5E5716D358D18EA7 /* libPods-QQPageViewController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B4481DD1F19D67D00775C2B = {
+			isa = PBXGroup;
+			children = (
+				9B4481E81F19D67E00775C2B /* QQPageViewController */,
+				9B4482021F19D67E00775C2B /* QQPageViewControllerTests */,
+				9B44820D1F19D67E00775C2B /* QQPageViewControllerUITests */,
+				9B4481E71F19D67E00775C2B /* Products */,
+				AE0C4331A8A7463CD7CB2B7C /* Pods */,
+				010FC038E70473BC45F288A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B4481E71F19D67E00775C2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B4481E61F19D67E00775C2B /* QQPageViewController.app */,
+				9B4481FF1F19D67E00775C2B /* QQPageViewControllerTests.xctest */,
+				9B44820A1F19D67E00775C2B /* QQPageViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B4481E81F19D67E00775C2B /* QQPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9B4482231F19DB3600775C2B /* ZZKMyTaskListVC.h */,
+				9B4482241F19DB3600775C2B /* ZZKMyTaskListVC.m */,
+				9B4482261F19DB5100775C2B /* ZZKPage1VC.h */,
+				9B4482271F19DB5100775C2B /* ZZKPage1VC.m */,
+				9B4482281F19DB5100775C2B /* ZZKPage2VC.h */,
+				9B4482291F19DB5100775C2B /* ZZKPage2VC.m */,
+				9B44822A1F19DB5100775C2B /* ZZKPage3VC.h */,
+				9B44822B1F19DB5100775C2B /* ZZKPage3VC.m */,
+				9B4482221F19DB0500775C2B /* PageView */,
+				9B4481EC1F19D67E00775C2B /* AppDelegate.h */,
+				9B4481ED1F19D67E00775C2B /* AppDelegate.m */,
+				9B4481EF1F19D67E00775C2B /* ViewController.h */,
+				9B4481F01F19D67E00775C2B /* ViewController.m */,
+				9B4481F21F19D67E00775C2B /* Main.storyboard */,
+				9B4481F51F19D67E00775C2B /* Assets.xcassets */,
+				9B4481F71F19D67E00775C2B /* LaunchScreen.storyboard */,
+				9B4481FA1F19D67E00775C2B /* Info.plist */,
+				9B4481E91F19D67E00775C2B /* Supporting Files */,
+			);
+			path = QQPageViewController;
+			sourceTree = "<group>";
+		};
+		9B4481E91F19D67E00775C2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B4481EA1F19D67E00775C2B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B4482021F19D67E00775C2B /* QQPageViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B4482031F19D67E00775C2B /* QQPageViewControllerTests.m */,
+				9B4482051F19D67E00775C2B /* Info.plist */,
+			);
+			path = QQPageViewControllerTests;
+			sourceTree = "<group>";
+		};
+		9B44820D1F19D67E00775C2B /* QQPageViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B44820E1F19D67E00775C2B /* QQPageViewControllerUITests.m */,
+				9B4482101F19D67E00775C2B /* Info.plist */,
+			);
+			path = QQPageViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		9B4482221F19DB0500775C2B /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				9B44821F1F19D82F00775C2B /* ZZKSelectTabItemCell.h */,
+				9B4482201F19D82F00775C2B /* ZZKSelectTabItemCell.m */,
+				9B44821C1F19D79600775C2B /* ZZKPageVC.h */,
+				9B44821D1F19D79600775C2B /* ZZKPageVC.m */,
+			);
+			name = PageView;
+			sourceTree = "<group>";
+		};
+		AE0C4331A8A7463CD7CB2B7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F75C6D90530A4BA36FA04F8 /* Pods-QQPageViewController.debug.xcconfig */,
+				DC6E4ADF69645ABFB1AF6E88 /* Pods-QQPageViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B4481E51F19D67E00775C2B /* QQPageViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4482131F19D67E00775C2B /* Build configuration list for PBXNativeTarget "QQPageViewController" */;
+			buildPhases = (
+				DEEE7E89AB6CFBA76D3EFD9D /* [CP] Check Pods Manifest.lock */,
+				9B4481E21F19D67E00775C2B /* Sources */,
+				9B4481E31F19D67E00775C2B /* Frameworks */,
+				9B4481E41F19D67E00775C2B /* Resources */,
+				EB6909799B0F83E0BA1D2EDF /* [CP] Embed Pods Frameworks */,
+				05B82112717BC7F775161AA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQPageViewController;
+			productName = QQPageViewController;
+			productReference = 9B4481E61F19D67E00775C2B /* QQPageViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B4481FE1F19D67E00775C2B /* QQPageViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4482161F19D67E00775C2B /* Build configuration list for PBXNativeTarget "QQPageViewControllerTests" */;
+			buildPhases = (
+				9B4481FB1F19D67E00775C2B /* Sources */,
+				9B4481FC1F19D67E00775C2B /* Frameworks */,
+				9B4481FD1F19D67E00775C2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B4482011F19D67E00775C2B /* PBXTargetDependency */,
+			);
+			name = QQPageViewControllerTests;
+			productName = QQPageViewControllerTests;
+			productReference = 9B4481FF1F19D67E00775C2B /* QQPageViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B4482091F19D67E00775C2B /* QQPageViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B4482191F19D67E00775C2B /* Build configuration list for PBXNativeTarget "QQPageViewControllerUITests" */;
+			buildPhases = (
+				9B4482061F19D67E00775C2B /* Sources */,
+				9B4482071F19D67E00775C2B /* Frameworks */,
+				9B4482081F19D67E00775C2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B44820C1F19D67E00775C2B /* PBXTargetDependency */,
+			);
+			name = QQPageViewControllerUITests;
+			productName = QQPageViewControllerUITests;
+			productReference = 9B44820A1F19D67E00775C2B /* QQPageViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B4481DE1F19D67D00775C2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zzk;
+				TargetAttributes = {
+					9B4481E51F19D67E00775C2B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					9B4481FE1F19D67E00775C2B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9B4481E51F19D67E00775C2B;
+					};
+					9B4482091F19D67E00775C2B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9B4481E51F19D67E00775C2B;
+					};
+				};
+			};
+			buildConfigurationList = 9B4481E11F19D67D00775C2B /* Build configuration list for PBXProject "QQPageViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B4481DD1F19D67D00775C2B;
+			productRefGroup = 9B4481E71F19D67E00775C2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B4481E51F19D67E00775C2B /* QQPageViewController */,
+				9B4481FE1F19D67E00775C2B /* QQPageViewControllerTests */,
+				9B4482091F19D67E00775C2B /* QQPageViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B4481E41F19D67E00775C2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4481F91F19D67E00775C2B /* LaunchScreen.storyboard in Resources */,
+				9B4481F61F19D67E00775C2B /* Assets.xcassets in Resources */,
+				9B4481F41F19D67E00775C2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4481FD1F19D67E00775C2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4482081F19D67E00775C2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05B82112717BC7F775161AA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQPageViewController/Pods-QQPageViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEEE7E89AB6CFBA76D3EFD9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6909799B0F83E0BA1D2EDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQPageViewController/Pods-QQPageViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B4481E21F19D67E00775C2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4482211F19D82F00775C2B /* ZZKSelectTabItemCell.m in Sources */,
+				9B44822E1F19DB5100775C2B /* ZZKPage3VC.m in Sources */,
+				9B4482251F19DB3600775C2B /* ZZKMyTaskListVC.m in Sources */,
+				9B4481F11F19D67E00775C2B /* ViewController.m in Sources */,
+				9B4481EE1F19D67E00775C2B /* AppDelegate.m in Sources */,
+				9B4481EB1F19D67E00775C2B /* main.m in Sources */,
+				9B44822C1F19DB5100775C2B /* ZZKPage1VC.m in Sources */,
+				9B44822D1F19DB5100775C2B /* ZZKPage2VC.m in Sources */,
+				9B44821E1F19D79600775C2B /* ZZKPageVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4481FB1F19D67E00775C2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4482041F19D67E00775C2B /* QQPageViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B4482061F19D67E00775C2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B44820F1F19D67E00775C2B /* QQPageViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B4482011F19D67E00775C2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B4481E51F19D67E00775C2B /* QQPageViewController */;
+			targetProxy = 9B4482001F19D67E00775C2B /* PBXContainerItemProxy */;
+		};
+		9B44820C1F19D67E00775C2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B4481E51F19D67E00775C2B /* QQPageViewController */;
+			targetProxy = 9B44820B1F19D67E00775C2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B4481F21F19D67E00775C2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4481F31F19D67E00775C2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B4481F71F19D67E00775C2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B4481F81F19D67E00775C2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B4482111F19D67E00775C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B4482121F19D67E00775C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B4482141F19D67E00775C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F75C6D90530A4BA36FA04F8 /* Pods-QQPageViewController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QQPageViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzkong.QQPageViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B4482151F19D67E00775C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC6E4ADF69645ABFB1AF6E88 /* Pods-QQPageViewController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QQPageViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzkong.QQPageViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9B4482171F19D67E00775C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QQPageViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzkong.QQPageViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QQPageViewController.app/QQPageViewController";
+			};
+			name = Debug;
+		};
+		9B4482181F19D67E00775C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QQPageViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzkong.QQPageViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QQPageViewController.app/QQPageViewController";
+			};
+			name = Release;
+		};
+		9B44821A1F19D67E00775C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QQPageViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzkong.QQPageViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QQPageViewController;
+			};
+			name = Debug;
+		};
+		9B44821B1F19D67E00775C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QQPageViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzkong.QQPageViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QQPageViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B4481E11F19D67D00775C2B /* Build configuration list for PBXProject "QQPageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4482111F19D67E00775C2B /* Debug */,
+				9B4482121F19D67E00775C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B4482131F19D67E00775C2B /* Build configuration list for PBXNativeTarget "QQPageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4482141F19D67E00775C2B /* Debug */,
+				9B4482151F19D67E00775C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B4482161F19D67E00775C2B /* Build configuration list for PBXNativeTarget "QQPageViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4482171F19D67E00775C2B /* Debug */,
+				9B4482181F19D67E00775C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B4482191F19D67E00775C2B /* Build configuration list for PBXNativeTarget "QQPageViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B44821A1F19D67E00775C2B /* Debug */,
+				9B44821B1F19D67E00775C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B4481DE1F19D67D00775C2B /* Project object */;
+}

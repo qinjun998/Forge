@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+   
+inhibit_all_warnings!
+
+
+target :'QQPageViewController' do
+
+#autolayout
+pod 'Masonry', '~> 0.6.2'
+pod 'PureLayout'#,'2.0.6'
+
+end

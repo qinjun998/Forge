@@ -1,0 +1,15 @@
+PODS:
+  - Masonry (0.6.4)
+  - PureLayout (3.0.2)
+
+DEPENDENCIES:
+  - Masonry (~> 0.6.2)
+  - PureLayout
+
+SPEC CHECKSUMS:
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+
+PODFILE CHECKSUM: a6110a81085fb589bd78008679763d771e23a28b
+
+COCOAPODS: 1.2.0

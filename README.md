@@ -53,14 +53,15 @@ viewDidLoad方法中在[super viewDidLoad]之前初始化数据源
 
 ## QQUITextFieldDatePicker
 
-点击TextField弹出日期等选择看起来是个简单的工作，实际操作过程中实际上问题非常多，比如多个输入框的识别、和键盘处理的冲突、键盘状态的确定和取消。每个问题都很麻烦，每次做这个东西都让人头大的。
-这个问题的解决方案的代码侵入性非常高高，几乎没有重用性。所以需要用更简单的办法，本来说这个问题应该用继承自定义控价来解决的，可是用Category看起来更加简洁。这个案例里用一个单一的类别解决了这个问题。
+点击TextField弹出日期等选择看起来是个简单的工作，实际操作过程中实际上问题非常多，比如多个输入框的识别、和键盘处理的冲突、键盘状态的确定和取消。每个问题都很麻烦，每次做这个东西都让人头大。
+这个问题的解决方案的代码侵入性非常高，几乎没有重用性。所以需要用更简单的办法.按理本来说这个问题应该用自定义控件的继承来解决的，可是用Category看起来更加简洁。这个案例里用一个单一的类别解决了这个问题。
 
-- **这个类别导入之后，使用起来代码就一行
+- TextField+DatePicker类别导入之后，使用起来代码只有一行即可实现功能。同理你可以在此基础上实现性别、输入数字等其他功能
 
-![Alt text](https://github.com/qinjun998/Forge/blob/master/images/dataPicker.gif)
 
 ```OC
    self.begin.datePickerInput = YES;
    self.end.datePickerInput = YES;
 ```
+
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/dataPicker.gif)

@@ -13,43 +13,33 @@
 - 使用方法1
 
 覆盖父类方法，设置数据源
-
+```OC
 - (NSMutableArray *)contentVCs{
-
-    NSMutableArray * _contentVCs =  [super contentVCs];
-    
+    NSMutableArray * _contentVCs =  [super contentVCs];  //super
     [_contentVCs addObject:[ZZKPage1VC new]];
-    
     [_contentVCs addObject:[ZZKPage2VC new]];
-    
     [_contentVCs addObject:[ZZKPage3VC new]];
-    
     return _contentVCs;
 }
 
 - (NSMutableArray *)tabTitles{
-
-    NSMutableArray * _tabTitles =  [super tabTitles];
-    
+    NSMutableArray * _tabTitles =  [super tabTitles];  //super
     _tabTitles =[@[@"参与",@"发布",@"收藏"] mutableCopy];
-    
     return _tabTitles;
 }
+```
 
 - 使用方法2
 
 viewDidLoad方法中在[super viewDidLoad]之前初始化数据源
 
+```OC
     self.tabTitles =  [@[@"参与",@"发布",@"收藏"] mutableCopy];
-    
     [self.contentVCs addObject:[ZZKPage1VC new]];
-    
     [self.contentVCs addObject:[ZZKPage2VC new]];
-    
     [self.contentVCs addObject:[ZZKPage3VC new]];
-
     [super viewDidLoad];
-
+```
 
 ## QQUITextFieldDatePicker
 

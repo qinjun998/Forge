@@ -5,7 +5,9 @@
 - QQPageViewController
 用PageViewController实现的项目的分页tab显示，代码的侵入性太强，每次都拷贝粘贴太多代码，现在集中到一个文件里，方便调用
 
-![Alt text](https://github.com/qinjun998/Forge/images/PageVC.gif)
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/PageVC.gif)
+
+
 
 - 使用方法1
 覆盖父类方法，设置数据源

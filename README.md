@@ -1,39 +1,46 @@
-# ConditionFilterViewDemo
-TableView条件筛选，类淘宝“销量最高”，“综合排序”
-- 目前只支持三个筛选框，还没有通用框架，如果只要两个，可以直接不加第三个，调整frame即可，如果是四个的话只能自己手动再加
+# Forge
+常用的小案例太多，一直存放在本地，有时间就把有用的上传一点
 
-相似存储数组参数解释：
 
-QZConditionFilterView.h
+- QQPageViewController
+用PageViewController实现的项目的分页tab显示，代码的侵入性太强，每次都拷贝粘贴太多代码，现在集中到一个文件里，方便调用
 
-/** 外部传入对应三个下拉tableView的DataSource*/
+![Alt text](https://github.com/qinjun998/Forge/images/PageVC.gif)
 
-@property (nonatomic,strong) NSArray *dataAry1;
+- 使用方法1
+覆盖父类方法，设置数据源
+- (NSMutableArray *)contentVCs{
+    NSMutableArray * _contentVCs =  [super contentVCs];
+    
+    ZZKPage1VC *vc1 = [ZZKPage1VC new];
+    ZZKPage2VC *vc2 = [ZZKPage2VC new];
+    ZZKPage3VC *vc3 = [ZZKPage3VC new];
+    
+    [_contentVCs addObject:vc1];
+    [_contentVCs addObject:vc2];
+    [_contentVCs addObject:vc3];
+    
+    return _contentVCs;
+}
 
-@property (nonatomic,strong) NSArray *dataAry2;
+- (NSMutableArray *)tabTitles{
+    NSMutableArray * _tabTitles =  [super tabTitles];
+    _tabTitles =[@[@"参与",@"发布",@"收藏"] mutableCopy];
+    return _tabTitles;
+}
 
-@property (nonatomic,strong) NSArray *dataAry3;
+- 使用方法2
+viewDidLoad方法中在[super viewDidLoad]之前初始化数据源
 
-// 暂时为无用变量，用于内部设置默认数据 [1] [2] [3] 现在情况比较简单，外部赋初值
+    self.tabTitles =  [@[@"参与",@"发布",@"收藏"] mutableCopy];
 
-@property (nonatomic,strong) NSArray *sortTitleAry;
+    ZZKPage1VC *vc1 = [ZZKPage1VC new];
+    ZZKPage2VC *vc2 = [ZZKPage2VC new];
+    ZZKPage3VC *vc3 = [ZZKPage3VC new];
+    
+    [self.contentVCs addObject:vc1];
+    [self.contentVCs addObject:vc2];
+    [self.contentVCs addObject:vc3];
 
-QZConditionFilterView.m
+    [super viewDidLoad];
 
-// 存储 tableView didSelected数据 数据来源：FilterDataTableView
-
-NSArray *_dataSource1;
-
-NSArray *_dataSource2;
-
-NSArray *_dataSource3;
-
-ViewController.m
-
-// *存储* 网络请求url中的筛选项 数据来源：View中_dataSource1或者一开始手动的初值
-
-NSArray *_selectedDataSource1Ary;
-
-NSArray *_selectedDataSource2Ary;
-
-NSArray *_selectedDataSource3Ary;

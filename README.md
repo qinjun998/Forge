@@ -58,9 +58,9 @@ viewDidLoad方法中在[super viewDidLoad]之前初始化数据源
 
 - **这个类别导入之后，使用起来代码就一行
 
-![Alt text](https://github.com/qinjun998/Forge/blob/master/images/dataPicker)
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/dataPicker.gif)
 
-‘’‘OC
+```OC
    self.begin.datePickerInput = YES;
    self.end.datePickerInput = YES;
-   ```
+```

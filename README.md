@@ -61,4 +61,4 @@ viewDidLoad方法中在[super viewDidLoad]之前初始化数据源
 
 Runtime的一些应用
 
-![image](https://github.com/qinjun998/Forge/blob/master/images/runtime1.png)
+<img width="50" height="150" src="https://github.com/qinjun998/Forge/blob/master/images/runtime1.png"/>

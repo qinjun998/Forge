@@ -54,7 +54,6 @@
 }
 
 
-
 - (IBAction)btnClick1:(id)sender {
     Person1 *p1 = [Person1 new];
     [p1 performSelector:@selector(fly)];

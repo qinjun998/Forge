@@ -62,3 +62,22 @@ viewDidLoad方法中在[super viewDidLoad]之前初始化数据源
 Runtime的一些应用
 
 <img width="150" height="380" src="https://github.com/qinjun998/Forge/blob/master/images/runtime1.png"/>
+
+
+## 标尺
+网上找的一个标尺/刻度尺例子。为了便于使用，进行了cell改造
+
+Cell使用方式
+
+```OC
+YSYRulerCell *cell=[tableView dequeueReusableCellWithIdentifier:[YSYRulerCell cellReuseIdentifier] forIndexPath:indexPath];
+[cell initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kRulerCellHeight-10) theMinValue:0 theMaxValue:100 theStep:2 theUnit:@"" theNum:5];
+```
+
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/ScrollRuler.png)
+
+## 进度条
+
+项目中使用的第三方的一个进度条，因为移动时缺乏动画效果，自己又重新手写了一个进度条。这个没有用的就传上来给需要的人
+
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/progressView.gif)

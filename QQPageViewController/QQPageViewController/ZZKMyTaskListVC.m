@@ -49,11 +49,15 @@
 
 - (void)viewDidLoad {
     
+    self.title = @"颐寿文摘";
+    
     self.tabTitles =  [@[@"参与",@"发布",@"收藏"] mutableCopy];
 
     ZZKPage1VC *vc1 = [ZZKPage1VC new];
     ZZKPage2VC *vc2 = [ZZKPage2VC new];
     ZZKPage3VC *vc3 = [ZZKPage3VC new];
+    
+
     
     [self.contentVCs addObject:vc1];
     [self.contentVCs addObject:vc2];

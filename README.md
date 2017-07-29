@@ -61,7 +61,7 @@ viewDidLoad方法中在[super viewDidLoad]之前初始化数据源
 
 Runtime的一些应用
 
-<img width="150" height="380" src="https://github.com/qinjun998/Forge/blob/master/images/runtime1.png"/>
+<img width="200" height="350" src="https://github.com/qinjun998/Forge/blob/master/images/runtime1.png"/>
 
 
 ## 标尺
@@ -74,7 +74,7 @@ YSYRulerCell *cell=[tableView dequeueReusableCellWithIdentifier:[YSYRulerCell ce
 [cell initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kRulerCellHeight-10) theMinValue:0 theMaxValue:100 theStep:2 theUnit:@"" theNum:5];
 ```
 
-![Alt text](https://github.com/qinjun998/Forge/blob/master/images/ScrollRuler.png)
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/biaochi.gif)
 
 ## 进度条
 

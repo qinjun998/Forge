@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="V9P-Dk-QgV">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V9P-Dk-QgV" secondAttribute="height" multiplier="1:1" id="fa6-W3-AEH"/>
+                                    <constraint firstAttribute="width" constant="100" id="tUV-bd-u1X"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sector" translatesAutoresizingMaskIntoConstraints="NO" id="L9N-Ij-AS4">
+                                <rect key="frame" x="162.5" y="311.5" width="50" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L9N-Ij-AS4" secondAttribute="height" multiplier="97:86" id="flj-2K-dJh"/>
+                                    <constraint firstAttribute="width" constant="50" id="yM0-FW-mD4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljm-Zf-4ey">
+                                <rect key="frame" x="262" y="610" width="73" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.76862745099999996" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="6ZA-Xe-F5k"/>
+                                </constraints>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NR6-VN-pec"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghe-P1-tJQ">
+                                <rect key="frame" x="40" y="552" width="73" height="30"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.20000000000000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="St6-mn-wHR"/>
+                                </constraints>
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9o-MY-zEY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7G-GR-TIA">
+                                <rect key="frame" x="262" y="553" width="73" height="30"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.20000000000000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="aNo-6b-CpW"/>
+                                </constraints>
+                                <state key="normal" title="继续"/>
+                                <connections>
+                                    <action selector="resume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TiI-eo-ZRM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAX-iq-cY0">
+                                <rect key="frame" x="40" y="610" width="73" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.76862745099999996" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="Ez5-Fu-0KM"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="begin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HqS-Tz-TGS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52941176469999995" green="0.83529411760000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="S7G-GR-TIA" secondAttribute="trailing" constant="40" id="0sx-9l-Odk"/>
+                            <constraint firstItem="ghe-P1-tJQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="2Da-d1-PX4"/>
+                            <constraint firstItem="V9P-Dk-QgV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2OR-Ga-3Re"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xAX-iq-cY0" secondAttribute="bottom" constant="27" id="85c-T4-agf"/>
+                            <constraint firstItem="ljm-Zf-4ey" firstAttribute="top" secondItem="S7G-GR-TIA" secondAttribute="bottom" constant="27" id="CtL-MI-3BG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ljm-Zf-4ey" secondAttribute="bottom" constant="27" id="GCh-Km-zT9"/>
+                            <constraint firstItem="V9P-Dk-QgV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HcA-ub-MfZ"/>
+                            <constraint firstItem="V9P-Dk-QgV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VAg-Bi-7sB"/>
+                            <constraint firstItem="xAX-iq-cY0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="XvT-c0-oIU"/>
+                            <constraint firstItem="L9N-Ij-AS4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yb2-Yz-hDw"/>
+                            <constraint firstItem="xAX-iq-cY0" firstAttribute="top" secondItem="ghe-P1-tJQ" secondAttribute="bottom" constant="28" id="dfM-84-4Wo"/>
+                            <constraint firstItem="L9N-Ij-AS4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="djw-I6-yPz"/>
+                            <constraint firstAttribute="trailing" secondItem="ljm-Zf-4ey" secondAttribute="trailing" constant="40" id="gMd-N6-IRo"/>
+                            <constraint firstItem="V9P-Dk-QgV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xJ6-KC-F4s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagView1" destination="L9N-Ij-AS4" id="Led-tx-4YW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" width="398" height="398"/>
+        <image name="sector" width="179" height="251"/>
+    </resources>
+</document>

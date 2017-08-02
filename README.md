@@ -81,3 +81,10 @@ YSYRulerCell *cell=[tableView dequeueReusableCellWithIdentifier:[YSYRulerCell ce
 项目中使用的第三方的一个进度条，因为移动时缺乏动画效果，自己又重新手写了一个进度条。这个没有用的就传上来给需要的人
 
 ![Alt text](https://github.com/qinjun998/Forge/blob/master/images/progressView.gif)
+
+
+## 旋转动画
+一个无限旋转动画，可控制其暂停、继续操作。
+全部动画代码封装到一个类别UIImageView+Rotation.h中使用
+
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/xuanzhuan.gif)

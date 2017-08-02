@@ -88,3 +88,17 @@ YSYRulerCell *cell=[tableView dequeueReusableCellWithIdentifier:[YSYRulerCell ce
 全部动画代码封装到一个类别UIImageView+Rotation.h中使用
 
 ![Alt text](https://github.com/qinjun998/Forge/blob/master/images/xuanzhuan.gif)
+
+## 数字选择
+单独封装成一个YSYNumberPickerView，使用覆盖数据源pickerDataSource，然后从resultValue获得选取的值
+
+```OC
+#import "YSYNumberPickerView.h"
+
+@property(nonatomic,assign) NSInteger resultValue;
+@property(nonatomic,strong) NSArray  *pickerDataSource;
+
+```
+
+
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/numberpicker.gif)

@@ -102,3 +102,8 @@ YSYRulerCell *cell=[tableView dequeueReusableCellWithIdentifier:[YSYRulerCell ce
 
 
 ![Alt text](https://github.com/qinjun998/Forge/blob/master/images/numberpicker.gif)
+
+
+## 连续旋转和缩放
+
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/xuanzhuansuofang.gif)

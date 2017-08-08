@@ -111,7 +111,8 @@ YSYRulerCell *cell=[tableView dequeueReusableCellWithIdentifier:[YSYRulerCell ce
 ![Alt text](https://github.com/qinjun998/Forge/blob/master/images/xuanzhuansuofang.gif)
 
 
-滚动图片
+## 滚动图片
+
 可控制的滚动图片，加一个NSTimer即可实现无限循环图片显示。已经封装成一个类。不支持自动布局方式。
 
 ![Alt text](https://github.com/qinjun998/Forge/blob/master/images/screen.gif)

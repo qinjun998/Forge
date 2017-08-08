@@ -106,6 +106,12 @@ YSYRulerCell *cell=[tableView dequeueReusableCellWithIdentifier:[YSYRulerCell ce
 
 ## 连续旋转和缩放
 
-旋转和缩放动画都和很简单，但是连续旋转和缩放动画的例子网上基本上就找不到了。没什么说的，放图看效果。
+旋转和缩放动画都很简单，但是连续旋转和缩放动画的例子网上基本上就找不到了。没什么说的，放图看效果。
 
 ![Alt text](https://github.com/qinjun998/Forge/blob/master/images/xuanzhuansuofang.gif)
+
+
+滚动图片
+可控制的滚动图片，加一个NSTimer即可实现无限循环图片显示。已经封装成一个类。不支持自动布局方式。
+
+![Alt text](https://github.com/qinjun998/Forge/blob/master/images/screen.gif)

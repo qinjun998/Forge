@@ -116,3 +116,32 @@ YSYRulerCell *cell=[tableView dequeueReusableCellWithIdentifier:[YSYRulerCell ce
 可控制的滚动图片，加一个NSTimer即可实现无限循环图片显示。已经封装成一个类。不支持自动布局方式。
 
 ![Alt text](https://github.com/qinjun998/Forge/blob/master/images/screen.gif)
+
+
+## LineView
+
+从左到右流式动态显示图片。
+UICollectionView是我最喜欢用的控件，用的太多，写的太也多，代码量太大，把它封装之后不需要一遍又一遍写UICollectionView了。
+这是个通用控件，可以根据这个例子把Cell修改替换成你喜欢的任何样子。
+
+
+
+```OC
+@property (nonatomic, strong) NSArray *imageNames;    //图片固定不变的数据源，图片名称数组
+@property (nonatomic, strong) NSMutableArray *images; //图片不固定时的数据源，UIImage数组
+@property (nonatomic, weak) id<YSYLineIconViewDelegete> lineIconViewDelegete;  //点击代理
+
+----
+    YSYLineIconView *lineView  = [YSYLineIconView new];
+    lineView.imageNames = @[@"vision_wrong",@"vison_correct",@"vision_wrong",@"vison_correct",@"vision_wrong"];
+    lineView.lineIconViewDelegete = self;
+    
+    [self.view addSubview:lineView];
+    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.leading.trailing.equalTo(self.view);
+        make.height.equalTo(@30);
+    }];
+
+```
+
+
